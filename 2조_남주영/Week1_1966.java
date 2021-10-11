@@ -7,14 +7,40 @@ public class Week1_1966 {
         for(int i = 0; i < T; i++) {
             int N = sc.nextInt();
             int M = sc.nextInt();
-            Map<Integer,Integer> map = new HashMap<Integer, Integer>();
-            for(int j = 0; j < N; j++) {
-                map.put(j, sc.nextInt());
+            Queue<Document> q = new LinkedList<>();
+            PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+            for(int order = 0; order < N; order++) {
+                int priority = sc.nextInt();
+                q.add(new Document(order, priority));
+                pq.add(priority);
             }
-            List<Integer> keySetList = new ArrayList<>(map.keySet());
-            Collections.sort(keySetList, (o1, o2) -> (map.get(o2).compareTo(map.get(o1))));
-            System.out.println(map.get(keySetList.indexOf(M)));
+            ArrayList<Document> list = new ArrayList<>();
+            while(!pq.isEmpty()) {
+                if(q.peek().priority < pq.peek()) {
+                    Document temp = q.poll();
+                    q.add(temp);
+                }else {
+                    pq.remove();
+                    list.add(q.poll());
+                }
+            }
+            for(int j = 0; j < list.size(); j++) {
+                if(list.get(j).order == M) {
+                    System.out.println(j+1);
+                    break;
+                }
+            }
         }
         sc.close();
+    }
+
+    static class Document {
+        int order;
+        int priority;
+
+        public Document(int order, int priority) {
+            this.order = order;
+            this.priority = priority;
+        }
     }
 }

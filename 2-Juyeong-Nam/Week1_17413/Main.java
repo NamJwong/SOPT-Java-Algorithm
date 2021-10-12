@@ -1,7 +1,9 @@
+package Week1_17413;
+
 import java.util.Scanner;
 import java.lang.StringBuffer;
 
-public class Week1_17413 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String S = sc.nextLine();

@@ -16,28 +16,23 @@ public class Main {
                 q.add(new Document(order, priority));
                 pq.add(priority);
             }
-//            ArrayList<Document> list = new ArrayList<>();
-            int count = 0;
+
+            ArrayList<Document> list = new ArrayList<>();
             while(!pq.isEmpty()) {
                 if(q.peek().priority < pq.peek()) {
                     Document temp = q.poll();
                     q.add(temp);
                 }else {
-                    count++;
                     pq.remove();
-                    if(q.peek().order == M) {
-                        System.out.println(count);
-                        break;
-                    }
-//                    list.add(q.poll());
+                    list.add(q.poll());
                 }
             }
-//            for(int j = 0; j < list.size(); j++) {
-//                if(list.get(j).order == M) {
-//                    System.out.println(j+1);
-//                    break;
-//                }
-//            }
+            for(int j = 0; j < list.size(); j++) {
+                if(list.get(j).order == M) {
+                    System.out.println(j+1);
+                    break;
+                }
+            }
         }
         sc.close();
     }

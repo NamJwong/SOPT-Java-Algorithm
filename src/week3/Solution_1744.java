@@ -7,6 +7,7 @@ public class Solution_1744 {
     //주어진 배열을 정렬
     //음수는 작은거 끼리 곱한다
     //1를 제외한 양수는 곱하며 큰거 끼리 곱한다.
+    //나머진는 다 더한다.
 
     public static int solution(int[] arr) {
         int n = arr.length;
@@ -30,6 +31,7 @@ public class Solution_1744 {
                 break;
             }
         }
+        //남은거 추가
         for (; end >= start; end--) {
             answer += arr[end];
         }
@@ -52,6 +54,5 @@ public class Solution_1744 {
         System.out.println("arr3 : " + solution(arr3));
         System.out.println("arr4 : " + solution(arr4));
         System.out.println("arr5 : " + solution(arr5));
-
     }
 }

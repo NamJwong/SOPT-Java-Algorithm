@@ -10,12 +10,14 @@ public class Solution_20207 {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int[] day = new int[367];
+
         for (int i = 0; i < n; i++) {
             int s = scan.nextInt();
             int e = scan.nextInt();
 
             for (int j = s; j <= e; j++) day[j]++;
         }
+
         int w = 0;
         int h = 0;
         int width = 0;

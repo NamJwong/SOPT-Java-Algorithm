@@ -11,13 +11,17 @@ import java.util.*;
 public class Solution_2805 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         int n = scan.nextInt();
         int m = scan.nextInt();
         int[] woods = new int[n];
+
         for (int i = 0; i < n; i++) {
             woods[i] = scan.nextInt();
         }
+
         Arrays.sort(woods);
+
         int left = 0;
         int right = woods[n - 1];
 

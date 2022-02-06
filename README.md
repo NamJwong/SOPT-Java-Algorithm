@@ -16,6 +16,6 @@
 |문제 풀이 회차|알고리즘 분류|문제 1|문제 2|문제 3|
 |:---:|:---:|:---:|:---:|:---:|
 |3회차|BFS & DFS|[2178번 미로탐색](https://www.acmicpc.net/problem/2178)|[10451번 순열 사이클](https://www.acmicpc.net/problem/10451)|[2573번 빙산](https://www.acmicpc.net/problem/2573)|
-|4회차|정렬 & 이진탐색|[10989번 수 정렬하기](https://www.acmicpc.net/problem/10989)|[1654번 랜선 자르기](https://www.acmicpc.net/problem/1654)|[2470번 두 용액](https://www.acmicpc.net/problem/2470)|
+|4회차|정렬 & 이진탐색|[10989번 수 정렬하기 3](https://www.acmicpc.net/problem/10989)|[1654번 랜선 자르기](https://www.acmicpc.net/problem/1654)|[2470번 두 용액](https://www.acmicpc.net/problem/2470)|
 |5회차|다이내믹 프로그래밍|[9095번 1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)|[11049번 행렬 곱셈 순서](https://www.acmicpc.net/problem/11049)|-|
 |6회차|최단 경로 알고리즘|[1753번 최단경로](https://www.acmicpc.net/problem/1753)|[1389번 케빈 베이컨의 6단계 법칙](https://www.acmicpc.net/problem/1389)|[11403번 경로 찾기](https://www.acmicpc.net/problem/11403)|

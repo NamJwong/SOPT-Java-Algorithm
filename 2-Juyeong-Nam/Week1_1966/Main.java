@@ -1,5 +1,3 @@
-package Week1_1966;
-
 import java.util.*;
 
 public class Main {

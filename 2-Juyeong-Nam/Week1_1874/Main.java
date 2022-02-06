@@ -1,5 +1,3 @@
-package Week1_1874;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;

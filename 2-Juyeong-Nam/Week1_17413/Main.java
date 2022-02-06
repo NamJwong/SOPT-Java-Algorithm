@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String S = sc.nextLine();
-        sc.close();
+        sc.close(); 
 
         int start, end;
         for(int i = 0; i < S.length(); i++) {

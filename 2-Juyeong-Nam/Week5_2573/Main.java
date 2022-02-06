@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     static int[][] arr;
     static int N;
-    static int M;
+    static int M; 
     static int[][] checks;
     static int year;
     public static void main(String[] args) {
@@ -22,7 +22,6 @@ public class Main {
 
         year = 0;
         while(true) {
-            //checkIcebergNum는 문제 없다는 전제
             if(checkIcebergNum() > 1) {
                 System.out.println(year);
                 break;

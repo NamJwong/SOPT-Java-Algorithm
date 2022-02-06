@@ -1,5 +1,3 @@
-package Week1_17413;
-
 import java.util.Scanner;
 import java.lang.StringBuffer;
 

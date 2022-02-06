@@ -36,7 +36,7 @@ public class Main {
     }
 
     static class Document {
-        int order;
+        int order; 
         int priority;
 
         public Document(int order, int priority) {
